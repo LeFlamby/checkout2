@@ -40,3 +40,51 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.desktop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.whisky{
+    align-self: flex-start;
+}
+
+.inkpen{
+    align-self: flex-end;
+}
+
+ul{
+    text-align: center;
+    margin: 0;
+}
+
+li{
+    
+    display: flex;
+    -webkit-user-modify: read-write-plaintext-only;
+    margin: 0;
+    
+}
+
+@media (max-width: 1200px) {
+    .inkpen{
+        display: none;
+    }
+  }
+
+@media (max-width: 1000px) {
+    .whisky{
+        display: none;}
+
+        .pages{
+            flex-basis: 100%;}
+    }
+  
+  @media (max-width: 800px) {
+    .pages  {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
