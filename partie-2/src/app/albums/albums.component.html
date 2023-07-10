@@ -1,0 +1,15 @@
+<h1>
+    Les Albums!!
+  </h1>
+  <button routerLink="" >retour Artistes</button>
+  <div *ngIf="albums.length">
+  <div *ngFor="let items of albums">
+    <img src={{items.images[0].url}} alt="image">
+    <p> Date de sortie :{{items.release_date}}</p>
+    <p>nom: {{items.artists[0].name}}</p>
+    <p>nombres de musiques: {{items.total_tracks}}</p>
+    <h2>Album: {{items.name}}</h2>
+    
+  
+  </div>
+  </div>

@@ -1,0 +1,9 @@
+<h1>
+    Les artistes!!
+  </h1>
+  <div *ngFor="let items of artists">
+    <img [routerLink]="['/artist',items.id,'albums']" src={{items.images[0].url}} alt="image du perso">
+    <h2>Followers: {{items.followers.total|number}}</h2>
+    <h3  [routerLink]="['/artist',items.id,'albums']">{{items.name|uppercase}}</h3>
+    
+  </div>
