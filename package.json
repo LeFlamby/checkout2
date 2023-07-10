@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/WildCodeSchool/checkpoint-1-angular-bordeaux-03-20#readme",
   "dependencies": {
+    "node": "^20.4.0",
     "typescript": "^3.8.3"
   }
 }
