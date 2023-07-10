@@ -27,18 +27,24 @@ const scores = [
   "1:4",
   "2:3",
   "2:4",
-  "3:4"
+  "3:4",
 ];
 
 function getPoints(array) {
   // Your code here !
-  let points = 0;
-  let team1Score= 0;
-  let team2Score = 0
-for(let points of array){
+  let total = 0;
 
-}
-
+  for (i = 0; i < array.length; i++) {
+    const resultArr = array[i].split(":");
+    console.log(array[i]);
+    console.log(resultArr);
+    if (resultArr[0] === resultArr[1]) {
+      total++;
+    } else if (resultArr[0] > resultArr[1]) {
+      total = total + 3;
+    }
+  }
+  return total;
 }
 
 console.log(getPoints(scores));
