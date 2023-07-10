@@ -32,6 +32,13 @@ const scores = [
 
 function getPoints(array) {
   // Your code here !
+  let points = 0;
+  let team1Score= 0;
+  let team2Score = 0
+for(let points of array){
+
+}
+
 }
 
 console.log(getPoints(scores));
